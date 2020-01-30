@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*
+
+ Author: Alfred Williams
+ Date: 1/30/20
+Comments: This C# Console application code demonstrates the use of iteration statements after getting input from users
+
+*/
+
+
+
+
+using System;
 
 namespace Iteration_Statment
 {
