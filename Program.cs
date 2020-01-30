@@ -6,7 +6,7 @@ namespace Iteration_Statment
     {
         static void Main(string[] args)
         {
-                 // Ask the user for input
+            // Ask the user for input
 
             Console.WriteLine("Enter an Integer value between 1 and 100 to execute a For Loop: ");
 
@@ -31,19 +31,26 @@ namespace Iteration_Statment
                 Depending on the value of the user input between 1 and 100, a For Loop iterative statement will execute. 
                 */
 
-                // If the value of user input is between 1 and 100, execute a For Loop
-
-                if ((value_of_input > 0) && (value_of_input <= 100))
-
                 
 
-                    // Here is the For Loop
+                if ((value_of_input >= 1) && (value_of_input <= 100))
+                {
+                    Console.WriteLine("The For Loop will iterate " + value_of_input.ToString() + " times.");
+                }
+
+
+                // Here is the For Loop
 
                 for (int i = 0; i < value_of_input; i++)
 
-                    {
-                Console.WriteLine("This is the current integer value in the loop:" + i.ToString());
-                    }
+                    // If the value of user input is between 1 and 100, execute a For Loop
+
+                    if ((value_of_input >= 1) && (value_of_input <= 100))
+                  
+
+                {
+                    Console.WriteLine("You have entered" + value_of_input.ToString()+"." + " This is the current integer value in the loop: " + i.ToString());
+            }
 
                     // Pause the program and await the user to press a key to end the program
 
@@ -54,7 +61,7 @@ namespace Iteration_Statment
 
             {
 
-                Console.WriteLine("Please enter an integer value and try running the program again ...");
+              
 
                 Console.WriteLine("Press any key to exit the program ...");
 
