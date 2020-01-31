@@ -42,7 +42,11 @@ namespace Iteration_Statment
                 Depending on the value of the user input between 1 and 100, a For Loop iterative statement will execute. 
                 */
 
-                
+                if (value_of_input > 100)
+
+                {
+                    Console.WriteLine("Cannot exceed 100");
+                }
 
                 if ((value_of_input >= 1) && (value_of_input <= 100))
                 {
@@ -52,27 +56,38 @@ namespace Iteration_Statment
 
                 // Here is the For Loop
 
-                for (int i = 0; i < value_of_input; i++)
+                if ((value_of_input >= 1) && (value_of_input <= 100))
+
+
+
+              
+
+                    for (int i = 1; i <= value_of_input; i++)
 
                     // If the value of user input is between 1 and 100, execute a For Loop
 
-                    if ((value_of_input >= 1) && (value_of_input <= 100))
-                  
+                    
 
+
+                    {
+                        Console.WriteLine("You have entered" + value_of_input.ToString() + "." + " This is the current integer value in the loop: " + i.ToString());
+                    }
+
+                if (value_of_input < 1)
                 {
-                    Console.WriteLine("You have entered" + value_of_input.ToString()+"." + " This is the current integer value in the loop: " + i.ToString());
-            }
+                    Console.WriteLine("Cannot be below 0");
+                }
 
-                    // Pause the program and await the user to press a key to end the program
+                // Pause the program and await the user to press a key to end the program
 
-                    Console.ReadKey(true);
+                Console.ReadKey(true);
                 
             }
             catch
 
             {
 
-              
+                Console.WriteLine("Please enter a number between 1 and 100");
 
                 Console.WriteLine("Press any key to exit the program ...");
 
